@@ -28,7 +28,6 @@ export const BudgetTool = () => {
   const appliedTheme = createMuiTheme(theme ? light : dark);
 
   useEffect(() => {
-    console.log('Checking access token', accessToken);
       if (!accessToken) {
           history.push('/');
       }

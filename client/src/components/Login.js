@@ -46,8 +46,6 @@ const Login = () => {
     const history = useHistory();
 
     useEffect(() => {
-        // redirect user to '/' path
-        console.log('Checking access token', accessToken);
         if (accessToken) {
             history.push('/budget-tool');
         }

@@ -19,7 +19,6 @@ export const Header = () => {
     const history = useHistory();
   
     useEffect(() => {
-      console.log('Checking access token', accessToken);
         if (!accessToken) {
             history.push('/');
         }
