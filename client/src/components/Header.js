@@ -33,13 +33,6 @@ export const Header = () => {
                 >Home
                 </Button>
             </a>
-            <a href="/budget-tool">
-                <Button 
-            size="small"                    
-                    color="default" 
-                >Budget
-                </Button>
-            </a>
             <Logout />
         </CardActions>
     )

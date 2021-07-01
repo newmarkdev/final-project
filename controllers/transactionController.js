@@ -1,9 +1,18 @@
 
 const Transaction = require('../models/Transaction');
 
+// Drop any saved transactions 
+const dropTransactions = () => {
+  // mongoose.connection.collections.TransactionModel.drop()
+  Transaction.collection.drop();
+}
+
 // Get all transactions
 // Route:  GET /api/v1/transactions
 exports.getTransactions = async (req, res, next) => {
+
+  dropTransactions();
+
   try {
     const transactions = await Transaction.find();
 

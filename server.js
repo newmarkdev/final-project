@@ -4,7 +4,6 @@ const dotenv = require('dotenv');
 const colors = require('colors');
 const morgan = require('morgan');
 const connectDB = require('./config/db');
-const mongoose = require('mongoose');
 
 dotenv.config({path: './config/config.env'});
 
@@ -13,10 +12,6 @@ connectDB();
 //Routes
 const transactions = require('./routes/transactions')
 const users = require('./routes/user')
-
-// Schemas
-const User = require('./models/UserModel');
-const TransactionModel = require('./models/Transaction');
 
 const app = express(); 
 
