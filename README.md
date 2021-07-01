@@ -6,6 +6,11 @@ Final portfolio project for Technigo code bootcamp June 2021.
 ## Solution
 An MVC approach was taken for the folder structure. More one the frontend and backend structure and frameworks used below. 
 
+Future feature addons:
+- convert into a PWA
+- Additional budget catagories 
+- 
+
 ## Frontend
 Built with and running React, Redux, Browser Router... 
 
