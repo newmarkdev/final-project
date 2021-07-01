@@ -1,3 +1,3 @@
-const BASE_URL = 'https://powerful-tor-37181.herokuapp.com';
+const BASE_URL = 'https://finance-tracker-sn.herokuapp.com';
 
 export const API_URL = (slug) => `${BASE_URL}/${slug}`;
