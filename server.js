@@ -6,7 +6,6 @@ const morgan = require('morgan');
 const connectDB = require('./config/db');
 const mongoose = require('mongoose');
 
-
 dotenv.config({path: './config/config.env'});
 
 connectDB();
@@ -27,17 +26,14 @@ if(process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));
 }
 
-// Add endpoint for user logged in Transactions 
-
-// Public Budget Transactions API tool
+// Budget Transactions Endpoint
 app.use('/api/v1/transactions', transactions);
 
-// User Sign Up and Login
+// User Signup/Login Endpoint 
 app.use('/user', users);
 
 if(process.env.NODE_ENV === 'production') {
     app.use(express.static('client/build'));
-
     app.get('*', (req, res) => res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html')));
 }
 

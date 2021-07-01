@@ -31,7 +31,6 @@ const user = createSlice({
     }
 });
 
-// or loginRegister
 export const sign = (username, password, mode) => {
     return (dispatch, getStore) => {
         const options = {

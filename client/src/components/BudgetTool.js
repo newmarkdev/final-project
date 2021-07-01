@@ -23,6 +23,7 @@ export const BudgetTool = () => {
   const accessToken = useSelector(store => store.user.accessToken);
   const history = useHistory();
 
+  // Darkmode
   const [theme, setTheme] = useState(true);
   const icon = !theme ? <Brightness7Icon /> : <Brightness3Icon />;
   const appliedTheme = createMuiTheme(theme ? light : dark);
@@ -35,7 +36,7 @@ export const BudgetTool = () => {
 
   return (
    
-      <ThemeProvider theme={appliedTheme}>
+  <ThemeProvider theme={appliedTheme}>
       <Paper style={{width: "100vw", borderRadius: 0, padding: "20px"}}>
           <IconButton
             edge="end"
@@ -45,20 +46,17 @@ export const BudgetTool = () => {
           >
             {icon}
           </IconButton>
-
-    <GlobalProvider>
-    <Header />
-    <div className="budget-wrapper">
-      <div className="container">
-        <Balance />
-        <IncomeExpenses />
-        <TransactionList />
-        <AddTransaction />
-      </div> 
-
-    </div>
-    </GlobalProvider>
-  
+        <GlobalProvider>
+          <Header />
+          <div className="budget-wrapper">
+            <div className="container">
+              <Balance />
+              <IncomeExpenses />
+              <TransactionList />
+              <AddTransaction />
+            </div> 
+          </div>
+        </GlobalProvider>
       </Paper>
     </ThemeProvider>
   );

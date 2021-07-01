@@ -2,8 +2,8 @@ const bcrypt = require('bcrypt');
 
 const User = require('../models/UserModel');
 
-// @desc    User Sign Up for access token 
-// @route   POST /signup
+// User Sign Up for access token 
+// Route: POST /signup
 exports.addUser = async (req, res, next) => {
   const { username, password } = req.body;
   
@@ -27,8 +27,8 @@ exports.addUser = async (req, res, next) => {
 };
 
 
-// @desc    User Login send access token 
-// @route   POST /login
+// User Login send access token 
+// Route: POST /login
 exports.loginUser = async (req, res, next) => {
   const { username, password } = req.body;
 
