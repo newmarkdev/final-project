@@ -1,3 +1,3 @@
-const BASE_URL = 'http://localhost:3000';
+const BASE_URL = 'https://finance-tracker-sn.herokuapp.com';
 
 export const API_URL = (slug) => `${BASE_URL}/${slug}`;

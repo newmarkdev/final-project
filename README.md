@@ -2,6 +2,7 @@
 Final portfolio project for Technigo code bootcamp June 2021. 
 
 ## Problem
+The brief was to build a fullstack MERN app. I chose to build a budget tooling app that solves doing a quick list of income and expenses and totals the balance. 
 
 ## Solution
 An MVC approach was taken for the folder structure. More one the frontend and backend structure and frameworks used below. 
@@ -12,19 +13,16 @@ Future feature addons:
 - 
 
 ## Frontend
-Built with and running React, Redux, Browser Router... 
+Built with and running React, Redux, Browser Router. 
 
 Context API was used to manage the state changes of the budget tool component. 
 
-Material UI was used to style certain elements such as the login form. 
+Material UI was used to style certain elements such as the login form. Redux was used for user login and token authentication. 
 
 ## Backend
-Built with and running Node, Express... 
-
-Using the MVC approach the backend folders where structure to divide the Models, Routes and Controller logic separate from the server.js. 
+Built with Node, Express and MongoDB. Using an MVC approach the backend folders where structured to divide the MongoDB Models, Routes and Controller logic separate from the server.js. 
 
 A REST API was created to handle user login/sign up as well as all budget transactions of adding, removing and listing the items. 
-
 
 ## API Endpoints
 Base URL for APIs  
