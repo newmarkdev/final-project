@@ -28,6 +28,10 @@ exports.addTransaction = async (req, res, next) => {
     const { text, amount } = req.body;
 
     const transaction = await Transaction.create(req.body);
+    await UserModel.findOneAndUpdate(
+      { _id: "60ddd55cadc06f0584509a23" },
+      { $push: { transaction } }
+      )
   
     return res.status(201).json({
       success: true,
