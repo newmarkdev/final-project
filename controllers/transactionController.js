@@ -1,5 +1,6 @@
 
 const Transaction = require('../models/Transaction');
+const UserModel = require('../models/UserModel');
 
 // Get all transactions
 // Route:  GET /api/v1/transactions
